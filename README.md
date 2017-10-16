@@ -20,9 +20,9 @@ PiPanoSDK 是一套用于处理全景图像的二次开发工具包，包含以�
 下载链接 ：[Google Play](https://play.google.com/store/apps/details?id=com.pi.testing.sdktesting)
 
 
-# 部署
+# 集成
 
-[部署指南](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK集成到AndroidStudio.md)
+[PiPanSDK集成到AndroidStudio](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK集成到AndroidStudio.md)
 
 
 
