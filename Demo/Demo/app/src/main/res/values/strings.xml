@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="text_asteroid">小行星</string>
+    <string name="text_cylinder">圆柱</string>
+    <string name="text_fisheye">鱼眼</string>
+    <string name="text_foursplit">四分屏</string>
+    <string name="text_immerse">沉浸式</string>
+    <string name="text_plane">平铺</string>
+    <string name="text_twoscroll">双画卷</string>
+    <string name="text_vr">VR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="预览"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="图片"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="视频"/>
+    </group>
+
+    <item android:title="图像源类型">
+        <menu>
+            <item
+                android:id="@+id/nav_input_oneeye"
+                android:icon="@drawable/ic_menu_share"
+                android:title="单目"/>
+            <item
+                android:id="@+id/nav_input_full21"
+                android:icon="@drawable/ic_menu_send"
+                android:title="全景2:1"/>
+        </menu>
+    </item>
+
+</menu>

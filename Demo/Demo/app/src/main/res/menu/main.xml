@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_view_mode1"
+        android:orderInCategory="100"
+        android:title="@string/text_fisheye"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view_mode2"
+        android:orderInCategory="100"
+        android:title="@string/text_asteroid"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view_mode3"
+        android:orderInCategory="100"
+        android:title="@string/text_immerse"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view_mode4"
+        android:orderInCategory="100"
+        android:title="@string/text_vr"
+        app:showAsAction="never"/>
+</menu>
