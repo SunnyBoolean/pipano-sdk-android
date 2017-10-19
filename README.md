@@ -16,21 +16,21 @@ PiPanoSDK is a set of software development kits designed to process panoramic im
 
 
 
-![沉浸](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E6%B2%89%E6%B5%B8.gif)![小行星](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E5%B0%8F%E8%A1%8C%E6%98%9F.gif)
+![沉浸](DocRes/Immerse.gif)![小行星](DocRes/Asteroid.gif)
 
-![综合](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E7%BB%BC%E5%90%88.gif)![坠入](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E5%9D%A0%E5%85%A5.gif)
+![综合](DocRes/Mix.gif)![坠入](DocRes/FallIn.gif)
 
 
 # Example
 
-![Scan QR code to download app](https://github.com/pisofttech/pipano-sdk-android/blob/master/DocRes/Scan QR code to download app.png)
+![Scan QR code to download app](https://github.com/pisofttech/pipano-sdk-android/blob/master/DocRes/商务Demo下载地址.png)
 
 Download link ：[Google Play](https://play.google.com/store/apps/details?id=com.pi.testing.sdktesting)
 
 
 # integrate
 
-[PiPanSDK集成到AndroidStudio](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK集成到AndroidStudio.md)
+[PiPanSDK集成到AndroidStudio](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK_integrated_into_AndroidStudio.md)
 
 
 
