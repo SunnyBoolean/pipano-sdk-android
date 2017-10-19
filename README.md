@@ -125,13 +125,13 @@ public void onSDKIsReady()
 1、Call openPhoto () to open the local photo and display it
 
 ```java
-mPiPanoSDK.openPhoto(path, type);	// path is the photo path, type is the image source type (monocular or panorama 2: 1)
+mPiPanoSDK.openPhoto(path, type);	// path, is the photo path, type is the image source type (see PiSourceModeType)
 ```
 
 2、After the photo is loaded successfully, you can switch the expand mode with setViewMode ()
 
 ```java
-mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // Set the expansion mode
+mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);
 ```
 
 ### Play video
@@ -139,7 +139,7 @@ mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // Set the expansion mod
 1、Call openVideo () to open the local mp4 file and play it
 
 ```java
-mPiPanoSDK.openVideo(path, type);   // path is the MP4 file path, type is the image source type (monocular or panorama 2: 1)
+mPiPanoSDK.openVideo(path, type);   // path is the MP4 file path, type is the image source type (see PiSourceModeType)
 ```
 
 2、During video playback, you can call setViewMode () to switch the expansion mode
@@ -151,10 +151,10 @@ mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // Set the expansion mod
 3、Video playback control
 
 ```java
-mPiPanoSDK.pause();	// Pause playback
-mPiPanoSDK.resume();	// Continue to play
+mPiPanoSDK.pause();
+mPiPanoSDK.resume();
 mPiPanoSDK.seek(0.3);    // Specify the progress of jumping to 30% of the video (actually only to the specified progress of the recent key frame)
-mPiPanoSDK.stop();	// Stop play
+mPiPanoSDK.stop();
 ```
 
 ### Preview video stream
@@ -173,9 +173,9 @@ public void onPreviewIsReady()
 {
   Log.d(TAG, "Preview is ok!!!");
 
-  openCamera(CAMERA_FRONT);	// Turn on the camera lens
+  openCamera(CAMERA_FRONT);
 
-  // 获取SDK的SurfaceTexture
+  // get SurfaceTexture
   SurfaceTexture texture = null;
   texture = mPiPanoSDK.getPreviewSurfaceTexture();
   
