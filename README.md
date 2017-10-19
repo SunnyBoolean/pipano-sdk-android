@@ -1,52 +1,61 @@
-# 简述
+# Brief
 
-PiPanoSDK 是一套用于处理全景图像的二次开发工具包，包含以下功能：
+PiPanoSDK is a set of software development kits designed to process panoramic images with the following features:
 
-1. 支持 浏览图片、播放视频、预览视频流；
-2. 支持图像输入源包含：单鱼眼，双鱼眼，全景2:1等；
-3. 支持多种展开模式：沉浸、鱼眼、小行星、圆柱、VR、双画卷等；
-4. 支持多种滤镜效果：锐化、木炭笔、轮廓、蓝莓、像素化等；
-5. 支持多种过场动画：翻转、渐变、开门、光圈、折叠等。
+1, Browse pictures, play video and preview video stream;
 
+2, Support source mode includeing oneeye, twoeye and full21;
 
-![沉浸](DocRes/Immerse.gif)![小行星](DocRes/Asteroid.gif)
+3, Support various view modes: immerse, fisheye, asteroid, cylinder, VR, twoscroll, etc .;
 
-![综合](DocRes/Mix.gif)![坠入](DocRes/FallIn.gif)
+4, Support  various filter effects: bleach, charcoal, contours, blueberry, pixelated, etc .;
 
-
-# 示例
-
-![事务Demo下载地址](https://github.com/pisofttech/pipano-sdk-android/blob/master/DocRes/商务Demo下载地址.png)
-
-下载链接 ：[Google Play](https://play.google.com/store/apps/details?id=com.pi.testing.sdktesting)
+5, Support a set of transition animations: flip, fade, gate, circle, fold , etc .;
 
 
-# 集成
+
+
+
+![沉浸](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E6%B2%89%E6%B5%B8.gif)![小行星](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E5%B0%8F%E8%A1%8C%E6%98%9F.gif)
+
+![综合](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E7%BB%BC%E5%90%88.gif)![坠入](http://fortylin-image.oss-cn-shenzhen.aliyuncs.com/doc/2017-10-13-%E5%9D%A0%E5%85%A5.gif)
+
+
+# Example
+
+![Scan QR code to download app](https://github.com/pisofttech/pipano-sdk-android/blob/master/DocRes/Scan QR code to download app.png)
+
+Download link ：[Google Play](https://play.google.com/store/apps/details?id=com.pi.testing.sdktesting)
+
+
+# integrate
 
 [PiPanSDK集成到AndroidStudio](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK集成到AndroidStudio.md)
 
 
 
-# 基本用法
+PiPanSDK integrated into AndroidStudio
 
-### 初始化
+# Basic usage
 
-1. 在Activity中onCreate()中创建SDK对象
+### initialization
+
+1、Create an SDK object in the activity onCreate ()
 
 ```java
  mPiPanoSDK = new PiPanoSDK(this, this);
 ```
 
-2. 将SDK实例与UI关联
+2、Associate the SDK instance with the UI
 
 ```java
-// 将SDK的Veiw与UI关联
+// Associate the SDK's Veiw with the UI
 mLayout = (FrameLayout) findViewById(R.id.sdk_view);
-mSDKView = mPiPanoSDK.getPlayerView();  // 获取SDK的View
+mSDKView = mPiPanoSDK.getPlayerView();  // Get the view of the SDK
 mLayout.addView(mSDKView);
 ```
 
-3. 重载相关响应函数
+3、Overload related response function
 
 ```java
 @Override
@@ -106,7 +115,7 @@ public void onDestroy()
 }
 ```
 
-4. 实现SDK初始化完成的回调接口
+4、Implement the SDK to initialize the completion of the callback interface
 
 ```java
 public void onSDKIsReady()
@@ -116,52 +125,52 @@ public void onSDKIsReady()
 
 ```
 
-### 加载照片
+### Load the photo
 
-1. 调用openPhoto()打开本地照片，并显示
-
-```java
-mPiPanoSDK.openPhoto(path, type);	// path是照片路径，type是图像源类型（单目 或 全景2:1）
-```
-
-2. 照片加载成功后，可以通过setViewMode()可以切换展开模式
+1、Call openPhoto () to open the local photo and display it
 
 ```java
-mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // 设置展开模式
+mPiPanoSDK.openPhoto(path, type);	// path is the photo path, type is the image source type (monocular or panorama 2: 1)
 ```
 
-### 播放视频
-
-1. 调用openVideo()打开本地mp4文件，并播放
+2、After the photo is loaded successfully, you can switch the expand mode with setViewMode ()
 
 ```java
-mPiPanoSDK.openVideo(path, type);   // path是MP4文件路径，type是图像源类型（单目 或 全景2:1）
+mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // Set the expansion mode
 ```
 
-2. 视频播放过程中，可以调用setViewMode()切换展开模式
+### Play video
+
+1、Call openVideo () to open the local mp4 file and play it
 
 ```java
-mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // 设置展开模式
+mPiPanoSDK.openVideo(path, type);   // path is the MP4 file path, type is the image source type (monocular or panorama 2: 1)
 ```
 
-3. 视频播放的控制
+2、During video playback, you can call setViewMode () to switch the expansion mode
 
 ```java
-mPiPanoSDK.pause();	// 暂停播放
-mPiPanoSDK.resume();	// 继续播放
-mPiPanoSDK.seek(0.3);    // 指定跳转到视频30%的进度(实际只能跳转到与指定进度最近的关键帧)
-mPiPanoSDK.stop();	// 停止播放
+mPiPanoSDK.setViewMode(PiViewModeType.PIVM_Immerse);    // Set the expansion mode
 ```
 
-### 预览视频流
+3、Video playback control
 
-1. 设置监听预览是否准备就绪
+```java
+mPiPanoSDK.pause();	// Pause playback
+mPiPanoSDK.resume();	// Continue to play
+mPiPanoSDK.seek(0.3);    // Specify the progress of jumping to 30% of the video (actually only to the specified progress of the recent key frame)
+mPiPanoSDK.stop();	// Stop play
+```
+
+### Preview video stream
+
+1、Set whether the monitor preview is ready
 
 ```java
 mPiPanoSDK.setPreviewIsReadyListener(this);
 ```
 
-2. 实现预览准备就绪的回调接口
+2、Implement the preview callback interface ready
 
 ```java
 @Override
@@ -169,7 +178,7 @@ public void onPreviewIsReady()
 {
   Log.d(TAG, "Preview is ok!!!");
 
-  openCamera(CAMERA_FRONT);	// 打开相机镜头
+  openCamera(CAMERA_FRONT);	// Turn on the camera lens
 
   // 获取SDK的SurfaceTexture
   SurfaceTexture texture = null;
@@ -180,13 +189,13 @@ public void onPreviewIsReady()
 }
 ```
 
-3. 设置输入图像的分辨率
+3、Set the resolution of the input image
 
 ```java
 mPiPanoSDK.setPreviewTextureSize(mWidth, mHeight);
 ```
 
-4. 开始预览
+4、Start previewing
 
 ```java
 mPiPanoSDK.startPreview(PiSourceModeType.PISM_Full21);
