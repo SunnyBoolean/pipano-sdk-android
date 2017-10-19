@@ -14,12 +14,11 @@ PiPanoSDK is a set of software development kits designed to process panoramic im
 
 
 
-
-
 ![沉浸](DocRes/Immerse.gif)![小行星](DocRes/Asteroid.gif)
 
 ![综合](DocRes/Mix.gif)![坠入](DocRes/FallIn.gif)
 
+[README_ZH](https://github.com/pisofttech/pipano-sdk-android/blob/master/readmd_zh/README_ZH.md)
 
 # Example
 
