@@ -30,11 +30,7 @@ Download link ：[Google Play](https://play.google.com/store/apps/details?id=com
 
 # integrate
 
-[PiPanSDK集成到AndroidStudio](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK_integrated_into_AndroidStudio.md)
-
-
-
-PiPanSDK integrated into AndroidStudio
+[PiPanSDK integrated into AndroidStudio](https://github.com/pisofttech/pipano-sdk-android/blob/master/PiPanSDK_integrated_into_AndroidStudio.md)
 
 # Basic usage
 
