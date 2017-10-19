@@ -2,15 +2,15 @@
 
 PiPanoSDK is a set of software development kits designed to process panoramic images with the following features:
 
-1, Browse pictures, play video and preview video stream;
+1, Browse pictures, play video and preview video stream.
 
-2, Support source mode includeing oneeye, twoeye and full21;
+2, Support source mode includeing oneeye, twoeye and full21.
 
-3, Support various view modes: immerse, fisheye, asteroid, cylinder, VR, twoscroll, etc .;
+3, Support various view modes: immerse, fisheye, asteroid, cylinder, VR, twoscroll, etc .
 
-4, Support  various filter effects: bleach, charcoal, contours, blueberry, pixelated, etc .;
+4, Support  various filter effects: bleach, charcoal, contours, blueberry, pixelated, etc .
 
-5, Support a set of transition animations: flip, fade, gate, circle, fold , etc .;
+5, Support a set of transition animations: flip, fade, gate, circle, fold , etc .
 
 
 
