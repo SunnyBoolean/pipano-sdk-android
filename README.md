@@ -50,7 +50,7 @@ mSDKView = mPiPanoSDK.getPlayerView();  // Get the view of the SDK
 mLayout.addView(mSDKView);
 ```
 
-3、Overload related response function
+3、Override related response function
 
 ```java
 @Override
