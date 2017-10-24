@@ -1,5 +1,7 @@
 # Brief
 
+[中文版](https://github.com/pisofttech/pipano-sdk-android/blob/master/readmd_zh/README_ZH.md)
+
 PiPanoSDK is a set of software development kits designed to process panoramic images with the following features:
 
 1, Browse pictures, play video and preview video stream.
@@ -18,7 +20,6 @@ PiPanoSDK is a set of software development kits designed to process panoramic im
 
 ![综合](DocRes/Mix.gif)![坠入](DocRes/FallIn.gif)
 
-[README_ZH](https://github.com/pisofttech/pipano-sdk-android/blob/master/readmd_zh/README_ZH.md)
 
 # Example
 
