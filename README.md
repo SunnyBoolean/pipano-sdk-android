@@ -1,5 +1,7 @@
 # Brief
 
+![logo](DocRes/logo.png)
+
 [中文版](https://github.com/pisofttech/pipano-sdk-android/blob/master/readmd_zh/README_ZH.md)
 
 PiPanoSDK is a set of software development kits designed to process panoramic images with the following features:
